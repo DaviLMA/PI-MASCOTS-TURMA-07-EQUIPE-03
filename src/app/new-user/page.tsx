@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation"; // Importe o hook useRouter
+import Image from "next/image";
 
 const NovoUsuario: React.FC = () => {
   const [username, setUsername] = useState<string>("");
@@ -33,7 +34,7 @@ const NovoUsuario: React.FC = () => {
     <div className="flex min-h-screen">
       {/* Coluna da imagem */}
       <div className="w-1/2 bg-teal-100 flex items-center justify-center p-2">
-        <img
+        <Image
           src="/Component-Logo.svg" // Caminho da imagem dentro da pasta public
           alt="Logo"
           className="w-2/4 h-auto object-contain" // Tamanho da logo

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const PrioritizingSection: React.FC = () => {
@@ -20,7 +21,7 @@ const PrioritizingSection: React.FC = () => {
             data-layername="descricao"
             className="mt-6 text-base leading-7 text-gray-500"
           >
-            Na Mascot's, nosso principal objetivo é garantir que cada animal de
+            Na Mascot&apos;s, nosso principal objetivo é garantir que cada animal de
             estimação que cuidamos tenha uma vida feliz e saudável.
             Dedicamo-nos a fornecer o mais alto padrão de atendimento
             veterinário, prestado com compaixão e profissionalismo. Nossa
@@ -31,7 +32,7 @@ const PrioritizingSection: React.FC = () => {
         </div>
 
         {/* Imagem */}
-        <img
+        <Image
           loading="lazy"
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/39d80ca4d15afbfcbd992a0caed25234151ef09682b88ba04425bee8dde1dd34?placeholderIfAbsent=true&apiKey=65c64030c4424aee83ffed5f5ea4d420"
           alt="Veterinário cuidando de um animal de estimação"

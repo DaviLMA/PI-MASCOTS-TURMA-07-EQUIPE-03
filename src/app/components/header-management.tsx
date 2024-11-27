@@ -3,16 +3,16 @@
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { useSession } from "next-auth/react"; // Importação correta do hook
+// import { useSession } from "next-auth/react"; // Importação correta do hook
 import PawVet from "../../../public/veterinary_paw.svg";
 import Logo from "../../../public/logo.svg";
 
 const HeaderManagement: React.FC = () => {
-  const { data: session } = useSession();
+  // const { data: session } = useSession();
   const router = useRouter();
 
   // URL da imagem do perfil, se existir na sessão, senão usa a imagem padrão
-  const userProfilePic = session?.user?.image || "/pet-gless.jpg"; // Caminho direto para a imagem na pasta public
+  // const userProfilePic = session?.user?.image || "/pet-gless.jpg"; // Caminho direto para a imagem na pasta public
 
   // Função de logout
   const handleLogout = () => {

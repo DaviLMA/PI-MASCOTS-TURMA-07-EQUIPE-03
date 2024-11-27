@@ -25,6 +25,7 @@ const TutorForm = () => {
       setMessage(`Tutor cadastrado com sucesso: ${response.data.owners_name}`);
     } catch (error) {
       setMessage('Erro ao cadastrar tutor.');
+      console.log(error)
     }
   };
 

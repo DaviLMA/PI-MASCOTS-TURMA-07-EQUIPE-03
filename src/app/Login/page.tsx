@@ -7,6 +7,7 @@ import { useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { FaGoogle } from "react-icons/fa"; // Importando o ícone do Google
 import emailjs from "emailjs-com"; // Importando o EmailJS
+import Image from "next/image";
 
 const Login: React.FC = () => {
   const [errorMessage, setErrorMessage] = useState<string>("");
@@ -14,7 +15,7 @@ const Login: React.FC = () => {
   const [password, setPassword] = useState<string>("");
   const [showResetPassword, setShowResetPassword] = useState<boolean>(false);
   const [resetEmail, setResetEmail] = useState<string>("");
-  const [name, setName] = useState<string>(""); // Estado para o nome do usuário
+  // const [name, setName] = useState<string>(""); // Estado para o nome do usuário
   const router = useRouter();
 
   // Login com Google
@@ -92,7 +93,7 @@ const Login: React.FC = () => {
         animate={{ opacity: 1 }}
         transition={{ duration: 1.2 }}
       >
-        <img
+        <Image
           src="/Component-Logo.svg"
           alt="Logo"
           className="w-2/4 h-auto object-contain"

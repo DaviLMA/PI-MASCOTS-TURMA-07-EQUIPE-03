@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 import { FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
@@ -46,7 +47,7 @@ const ContactSection: React.FC = () => {
           </div>
 
           {/* Imagem */}
-          <img
+          <Image
             loading="lazy"
             src="https://cdn.builder.io/api/v1/image/assets/TEMP/194e3e77a8f0d9e2f052d6b89d767bf652a62ed3dbaf57d25f56fa3c39064537?placeholderIfAbsent=true&apiKey=65c64030c4424aee83ffed5f5ea4d420"
             alt="Veterinário atendendo uma chamada de emergência"

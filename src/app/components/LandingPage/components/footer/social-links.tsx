@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import React from 'react';
 
 const SocialLinks: React.FC = () => {
@@ -9,7 +10,7 @@ const SocialLinks: React.FC = () => {
         </h3>
         <div className="flex gap-2">
           <a href="https://linkdaRedeSocial1.com" target="_blank" rel="noopener noreferrer">
-            <img
+            <Image
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/10f917814a83b4ead8275a7672ba13e40e7db5c25b0c9dc15f0aabdbe6412aee?placeholderIfAbsent=true&apiKey=65c64030c4424aee83ffed5f5ea4d420"
               alt="Ícone da rede social 1"
@@ -17,7 +18,7 @@ const SocialLinks: React.FC = () => {
             />
           </a>
           <a href="https://linkdaRedeSocial2.com" target="_blank" rel="noopener noreferrer">
-            <img
+            <Image
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/cb57cf1f1f628d2dddc6fed42f489c3c607adc30b9351718917b4b96a45b2149?placeholderIfAbsent=true&apiKey=65c64030c4424aee83ffed5f5ea4d420"
               alt="Ícone da rede social 2"

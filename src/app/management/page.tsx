@@ -1,13 +1,10 @@
 'use client'
 import React, { useState } from "react";
-import { Cards } from "../components/cards";
+import { Cards } from "../components/Cards";
 import { motion, AnimatePresence } from "framer-motion";
-import Calendar from "react-calendar"; 
-import "react-calendar/dist/Calendar.css"; 
 
-export const Management: React.FC = () => {
+const Management: React.FC = () => {
   const [selectedId, setSelectedId] = useState<string | null>(null);
-  const [calendarDate, setCalendarDate] = useState(new Date());
 
   const linksCards = [
     {
@@ -30,6 +27,7 @@ export const Management: React.FC = () => {
       textColor: "text-white",
     },
   ];
+
 
   const items = [
     { id: "div1", content: "Calendário", bgColor: "bg-teal-700" },
@@ -113,12 +111,7 @@ export const Management: React.FC = () => {
                   {selectedId === "div1" && (
                     <div>
                       <h2 className="text-2xl font-bold text-teal-800 mb-4">Calendário</h2>
-                      <p className="text-teal-600">Veja e gerencie as consultas.</p>
-                      <Calendar
-                        onChange={setCalendarDate}
-                        value={calendarDate}
-                        className="mt-4"
-                      />
+                      <p className="text-teal-600">Veja e gerencie as consultas.</p>                     
                     </div>
                   )}
                   {selectedId === "div2" && (
